@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @ally %>
+
+<div>
+  <%= link_to "Edit this ally", edit_ally_path(@ally) %> |
+  <%= link_to "Back to allies", allies_path %>
+
+  <%= button_to "Destroy this ally", @ally, method: :delete %>
+</div>

@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Allies</h1>
+
+<div id="allies">
+  <% @allies.each do |ally| %>
+    <%= render ally %>
+    <p>
+      <%= link_to "Show this ally", ally %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New ally", new_ally_path %>
